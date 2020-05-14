@@ -32,9 +32,7 @@ app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 let db = firebase.firestore();
 let bucket = firebase.storage().bucket();
 
-app.get("/hello", function (req, res) {
-    res.render("hello");
-});
+
 
 // Delete route
 app.get("/delete/:collectionName/:title/:senderPsid", function (req, res) {

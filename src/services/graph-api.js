@@ -9,7 +9,7 @@ module.exports = class GraphAPi {
         console.log("Called");
         request(
           {
-            uri: "https://graph.facebook.com/v6.0/me/messages?access_token=EAAJMmhtDAIABAJnkg4GKznfQCSAVwcuhVRCWNXBawym7e8PhJiw61AnhUIxnzuFpZCxt7QPnIIIzHoG3F91qdu2xZC6y1na1V7TvyDGhjTbE2fi7AHLt7ZCqi8BTXvz2WYggrssMTzeC5prZAXDrey600NGtEnhrmvBBilfcLbxecXmRjR4v",
+            uri: "https://graph.facebook.com/v6.0/me/messages?access_token=EAAPZCRBu1SEgBABu99UY5m9xskRUdsN12xZCejsdWlxQSSZAWP77j7v2b9ZBXOWxVquQRRDCp9ZBXXKoZBbbFc8caIbXdZCClJxG8UrKcZCUzRrZAR3pW2mbVbdpxODQnerlT1US02mXvAdTCLwJZBDSzb5D8ho29K68Y4bB4CwHHbhgZDZD",
             method: "POST",
             json: requestBody
           },
