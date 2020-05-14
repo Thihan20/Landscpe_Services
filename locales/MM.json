@@ -1,0 +1,56 @@
+{
+	"get_started": {
+		"welcome": "Landscaping services မှကြိုဆိုပါတဃ်",
+		"help": "ဘာများကူညီပေးရမလဲ"
+	},
+	"options": {
+		"choose": "ရွေးချယ်ပေးပါ",
+		"service": "services",
+		"product": "Product"
+	},
+	"service": {
+		"help": "Service ရွေးချယ်ပေးပါ",
+		"service": "Services",
+		"product": "Products"
+	},
+	"order": {
+		"title": "ရယူပါ"
+	},
+	"plant_service": {
+		"help": "Plant type ရွေးချယ်ပေးပါ"
+	},
+	"grass_service": {
+		"help": "Grass type ရွေးချယ်ပေးပါ"
+	},
+	"maintenance_service": {
+		"help": "Maintenance type ရွေးချယ်ပေးပါ"
+	},
+	"back": {
+		"title": "နောက်သို့"
+	},
+	"talk_with_admin": {
+		"title": "Admin သို့ဆက်သွယ်ရန်",
+		"reply" : "ကျေးဇူးပြုပြီး : 09973346257 ကိုဆက်သွယ်ပေးပါ"
+	},
+	"admin": {
+		"welcome": "Welcome from admin access.",
+		"option": {
+			"create": "Create New",
+			"UDelete": "Update, delete"
+		}
+	},
+	"services": {
+		"choose": "Services ရွေးချယ်ပေးပါ",
+		"service": "Service",
+		"product": "Product"
+	},
+	"Order" : {
+		"success" : "Order တင်ခြင်းအောင်မြင်ပါသည်",
+		"thank" : "Landscaping services ကိုအသုံးပြုခြင်းအတွက်ကျေးဇူးတင်ပါသည်,  {{order_user_name}}",
+		"contact" : "အသေးစိတ်အချက်အလက်အတွက် Admin မှပြန်ဆက်သွယ်ပါမည်"
+	},
+	"continue" : {
+		"title" : "ဆက်ကြည့်မှာလား?",
+		"continue" : "ဆက်ကြည့်ရန်"
+	}
+}

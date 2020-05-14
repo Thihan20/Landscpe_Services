@@ -1,0 +1,56 @@
+{
+	"get_started": {
+		"welcome": "Welcome to landscaping services",
+		"help": "What can we do for you?"
+	},
+	"options": {
+		"choose": "Please choose the following.",
+		"service": "services",
+		"product": "Product"
+	},
+	"service": {
+		"help": "Please choose the service.",
+		"service": "Services",
+		"product": "Products"
+	},
+	"order": {
+		"title": "Order Now"
+	},
+	"plant_service": {
+		"help": "Please choose plant type."
+	},
+	"grass_service": {
+		"help": "Please choose grass type."
+	},
+	"maintenance_service": {
+		"help": "Please choose maintenance type."
+	},
+	"back": {
+		"title": "BACK"
+	},
+	"talk_with_admin": {
+		"title": "Talk with admin",
+		"reply" : "Please contact : 09973346257"
+	},
+	"admin": {
+		"welcome": "Welcome from admin access.",
+		"option": {
+			"create": "Create New",
+			"UDelete": "Update, delete"
+		}
+	},
+	"services": {
+		"choose": "Please choose service",
+		"service": "Servoce",
+		"product": "Product"
+	},
+	"Order" : {
+		"success" : "Your order is success.",
+		"thank" : "Thanks for using our landscaping services,  {{order_user_name}}",
+		"contact" : "Our admin will contact back for more detail."
+	},
+	"continue" : {
+		"title" : "Continue ?",
+		"continue" : "Continue"
+	}
+}

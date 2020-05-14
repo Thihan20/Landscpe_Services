@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <title>Landscape</title>
+    <style>
+        .header {
+            padding-top: 20px;
+        }
+        .update {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        (
+            function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "//connect.facebook.net/en_US/messenger.Extensions.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+                (document, 'script', 'Messenger')
+        );
+
+        let senderID = '';
+        const APP_ID = '';
+
+        window.extAsyncInit = function () {
+            MessengerExtensions.getContext(APP_ID, function success(thread_context) {
+                senderID = thread_context.psid;
+            },
+                function error(err) {
+                    console.log(err);
+                });
+        };
+    </script>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h5 class="header"><%= heading %></h5>
+                <hr />
+                <form id="form" method="POST" action="https://1f64c36a.ngrok.io/update">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" id="title" name="title" value="<%= data.title %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="sub-title">Sub-title</label>
+                        <input type="text" class="form-control" id="subtitle" name="subtitle" value="<%= data.subtitle %>">
+                    </div>
+                    <div class="form-group">
+                        <label for="image_url">Image url</label>
+                        <input type="text" class="form-control" id="image_url" name="image_url" value="<%= data.image_url %>">
+                    </div>
+                    <input type="hidden"  id="originalTitle" name="originalTitle" value="<%= data.title %>"> 
+                    <input type="hidden"  id="collection" name="collection" value="<%= collection %>">
+                    <input type="hidden"  id="doc_id" name="doc_id" value="<%= data.doc_id %>">  
+                    <input type="hidden"  id="senderID" name="senderID" value="<%= sender_id %>">  
+                    <button type="submit" class="btn btn-primary btn-block update" id ="order">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        const windowShut = () => {
+            MessengerExtensions.requestCloseBrowser(function success() {
+                console.log("Browser close success");
+            },
+                function error(err) {
+                    console.log(err);
+                });
+        }
+        document.getElementById("form").addEventListener("submit", windowShut);
+    </script>
+</body>
+
+</html>
