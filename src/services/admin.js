@@ -268,6 +268,8 @@ module.exports = class Admin {
             case "ADMIN_PLANT_GROUND_COVER_UDELETE":
             case 'ADMIN_GRASS_REAL_UDELETE':
             case 'ADMIN_GRASS_ARTIFICIAL_UDELETE':
+            case 'ADMIN_MAINTENANCE_PLANT_UDELETE':
+            case 'ADMIN_MAINTENANCE_GRASS_UDELETE':
                 this.updateDelete(this.senderPsid, payLoad);
                 break;
         }
@@ -294,6 +296,12 @@ module.exports = class Admin {
             case 'ADMIN_GRASS_ARTIFICIAL_UDELETE':
                 collectionName = "Grass_Artificial";
                 break;
+            case 'ADMIN_MAINTENANCE_GRASS_UDELETE':
+                collectionName = "Maintenance_Grass";
+                break;
+            case 'ADMIN_MAINTENANCE_PLANT_UDELETE':
+                collectionName = "Maintenance_Plants";
+                break;   
         }
         this.showUpdateDeleteUI(senderPsid, collectionName);
     }
